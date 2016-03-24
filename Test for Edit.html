@@ -1,0 +1,185 @@
+<!DOCTYPE html> <!--all html files documents begin with this -->
+<!--Sams Teach Yourself to build a webpage in 24 hours-->
+ <!--http://demos.jquerymobile.com/-->
+ <!-- HTML Info
+	ELEMENTS
+		are tags with content in between
+	TAGS
+		<head></head> includes metadata 
+			summary of basic info for data 
+			between <html> and <body>
+		<p> paragraphs have LINES in between
+		<a> tags are for HTML links 
+			ex: <a href="http://www.w3schools.com">This is a link</a>   href attribute; attributes provide extra info
+			about HTML elements 
+		<img> tags are for images 
+			 ex: <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">   attributes!!! 
+		<hr> defines a horizontal line === BLANK LINE
+		<br> line break without starting new paragraph (no space between lines)
+		<pre></pre> preserves lines and spaces of code
+		
+	ATTRIBUTES
+		alt = " "      displays alternative text when the attribute cannot be shown
+		single quotes or double quotes for differentiation
+	STYLE
+		syntax = //style="property:value;" // CSS property and value 
+	
+	TEXT FORMATTING	
+		ex: <b> <em> <i> <small> <strong> <sub> <sup> <ins> <del> <mark> 
+		quotation and citation
+		<bdo> // bi-directioal overide 
+			sample: // <bdo dir="rtl"> or <bdo dir="ltr">
+	
+	CSS
+		inline = // style attribute // formats specific sections 
+		internal = // using a <style> element in <head> section // defines style all at once for the HTML page
+		external = // using one or more external files // defines style for all pages 
+			write an 'external style sheet' in any text editor 
+				save with .css extension // can be used to format all PAGES if called 
+		id attribute // unique to HTML element
+		class element // unique to group 
+	LINK
+	
+		
+-->
+<html lang="en-US" lang ="th">
+
+	<head> <!-- head is always invisible-->
+	<title>Autonomous Language Acquisition</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	
+	
+	<body> <!--body is the visible part-->
+	<!-- Start of first page -->
+		<div data-role="page" id="startPage">
+		<div data-role="header" data-filter="true">
+			<h1>Question Now!</h1>
+		     <a href="#6" data-role="button" data-role="popup" data-iconshadow="false"
+				data-direction="reverse" onclick="empty()" data-transition="slide"
+				data-iconpos="notext"  class="ui-btn-right" href="#Editing Page" data-rel="popup"> Edit</a> 
+			<a href="#popupMenu" 
+				data-rel="popup" 
+				data-transition="slideup" 
+				class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-gear ui-btn-icon-left ui-btn-a" 
+				button onmousedown="startpopup()" 
+				button onmouseup="stoppopup()"
+				>Edit</a>
+				<div data-role="popup" id="popupMenu" data-theme="b">
+        		<ul data-role="listview" data-inset="true" style="min-width:210px;"
+            	<lidata-role="list-divider">Choose an action.</li>
+            	<li><a href="#">Edit</a></li>
+        		</ul>
+		</div>
+
+		
+		<div data-role="content">	
+				<!--	<button type="button">Edit</button> -->
+				<ul data-role="listview">
+					<li><a href="#bar">Add Question</a></li>
+					<li><a href="#bar">Basic Questions</a></li>
+					<li><a href="#bar">Cooking</a></li>
+					<li><a href="#bar">Cleaning</a></li>
+					<li><a href="#bar">Shopping</a></li>
+					<li><a href="#bar">Finance</a></li>
+				</ul>		
+			</div>
+		</div>
+		
+		<div data-role="page">
+          <div data-role="panel" id="mypanel">
+           <!-- panel content goes here -->
+          </div><!-- start of edit panel -->
+
+			<!-- header -->
+			<!-- content -->
+			<!-- footer -->
+
+		</div><!-- end of edit panel -->
+
+		<!-- end of first page-->
+
+
+	
+		</div><!-- /page -->
+		<!-- Start of Edit Page -->
+			<div data-role="page" id="Editing Page">
+			<p>This page is for editing titles.</p>
+			</div>
+
+		<!-- Start of second page -->
+		<div data-role="page" id="bar">
+
+			<div data-role="header">
+				<a data-rel="back">Back</a>
+				<h3>Question Now!</h3>
+				 <a href="#6" data-role="button" data-iconshadow="false"
+				data-direction="reverse" onclick="empty()" data-transition="slide"
+				data-iconpos="notext"  class="ui-btn-right">Edit</a>
+				<h1>Category</h1>
+			</div>
+	
+	
+	<!-- /header -->
+	
+
+	<div data-role="content">	
+		<div>
+				
+				<ul data-role="listview" data-filter="true">
+					<li><a href="#bar2">Add Question</a></li>
+					<li><a href="#bar2">What time do I need to ______?</a></li>
+					<li><a href="#bar2">Where will I find ______?</a></li>
+					<li><a href="#bar2">How much ______ do I need to buy?</a></li>
+				</ul>
+			</div>	
+	</div>			
+				
+
+</div><!-- /page -->
+
+<!-- Start of third page -->
+<div data-role="page" id="bar2">
+
+	<div data-role="header">
+		<a data-rel="back">Back</a>
+		<h3>Question Now!</h3>
+		 <a href="#6" data-role="button" data-iconshadow="false"
+        data-direction="reverse" onclick="empty()" data-transition="slide"
+        data-iconpos="notext"  class="ui-btn-right">Edit</a>
+		<h1>Question</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<div>
+				
+				<p>What time do I need to ______ ? </p>
+				<p><pre> ฉันทำ อะไรเวลาที่ต้อง </pre></p>
+		</div>
+
+</div><!-- /page -->			
+		
+	
+			<script language=javascript type="text/javascript">
+
+			var timeVar;
+			function startpopup() {
+				timeVar = setTimeout(delaypopup, 3000);
+
+			}
+
+			function stoppopup(){
+				clearTimeout(timeVar);
+			}
+
+			function delaypopup(){
+				alert("<h1>Delay Popup!!!</h1>");
+				
+			}
+			</script>				
+		<address> Coded by Sang Ah (Grace) Jang <br> Email me at: <br> artemeeq@gmail.com <br>
+	</body>
+</html>

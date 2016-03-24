@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+  
+<html>
+	<head>
+	<title>Spiffy Translation Project</title>
+	
+		<style type="text/css">
+		body {
+			color: purple;
+			background-color: #d8da3d }
+	  </style>
+	  
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+	</head>
+    <body>
+<!--
+		<ul class="navbar">
+		  <li><a href="index.html">Home page</a>
+		  <li><a href="musings.html">Musings</a>
+		  <li><a href="town.html">My town</a>
+		  <li><a href="links.html">Links</a>
+		</ul>
+
+        <div class="app" align="left">
+			<div data-role="page">
+				<div data-role="header"><h1>Question Now!</h1></div>
+			</div>
+			
+			<div>
+				<h1>Question Now!</h1>
+				<button type="button">Edit</button>
+				<ul>
+					<li>Add Page</li>
+					<li>Basic Questions</li>
+					<li>Cooking</li>
+					<li>Cleaning</li>
+					<li>Shopping</li>
+					<li>Finance</li>
+				</ul>
+			</div>
+			
+			<div>
+				<h3>Question Now!</h3>
+				<h1>Basic Questions</h1>
+				<button type="button">Edit</button>
+				<ul>
+					<li>Add Question</li>
+					<li>What time do I need to ______?</li>
+					<li>Where will I find ______?</li>
+					<li>How much ______ do I need to buy?</li>
+				</ul>
+			</div>
+			
+			<div>
+				<h3>Question Now!</h3>
+				<button type="button">Edit</button>
+				<p>What time do I need to ______ ? </p>
+				<p> ฉันทำ อะไรเวลาที่ ต้อง </p>
+			</div>
+			
+		</div>
+	-->	
+
+<!-- Start of first page -->
+<div data-role="page" id="startPage">
+
+	<div data-role="header" data-filter="true">
+		<h1>Question Now!</h1>
+		     <a href="#6" data-role="button" data-iconshadow="false"
+        data-direction="reverse" onclick="empty()" data-transition="slide"
+        data-iconpos="notext"  class="ui-btn-right" href="#Editing Page" data-rel="popup"> Edit</a>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+	
+	<!--	<button type="button">Edit</button> -->
+				<ul data-role="listview">
+					<li><a href="#bar">Add Page</a></li>
+					<li><a href="#bar">Basic Questions</a></li>
+					<li><a href="#bar">Cooking</a></li>
+					<li><a href="#bar">Cleaning</a></li>
+					<li><a href="#bar">Shopping</a></li>
+					<li><a href="#bar">Finance</a></li>
+				</ul>
+	</div><!-- /content -->
+
+	
+</div><!-- /page -->
+<!-- Start of Edit Page -->
+<div data-role="page" id="Editing Page">
+<p>This page is for editing titles.</p>
+</div>
+
+<!-- Start of second page -->
+<div data-role="page" id="bar">
+
+	<div data-role="header">
+		<a data-rel="back">Back</a>
+		<h3>Question Now!</h3>
+		 <a href="#6" data-role="button" data-iconshadow="false"
+        data-direction="reverse" onclick="empty()" data-transition="slide"
+        data-iconpos="notext"  class="ui-btn-right">Edit</a>
+		<h1>Category</h1>
+	</div>
+	
+	
+	<!-- /header -->
+	
+
+	<div data-role="content">	
+		<div>
+				
+				<ul data-role="listview" data-filter="true">
+					<li><a href="#bar2">Add Question</a></li>
+					<li><a href="#bar2">What time do I need to ______?</a></li>
+					<li><a href="#bar2">Where will I find ______?</a></li>
+					<li><a href="#bar2">How much ______ do I need to buy?</a></li>
+				</ul>
+			</div>	
+	</div>			
+				
+
+</div><!-- /page -->
+
+<!-- Start of third page -->
+<div data-role="page" id="bar2">
+
+	<div data-role="header">
+		<a data-rel="back">Back</a>
+		<h3>Question Now!</h3>
+		 <a href="#6" data-role="button" data-iconshadow="false"
+        data-direction="reverse" onclick="empty()" data-transition="slide"
+        data-iconpos="notext"  class="ui-btn-right">Edit</a>
+		<h1>Question</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<div>
+				
+				<p>What time do I need to ______ ? </p>
+				<p> ฉันทำ อะไรเวลาที่ ต้อง </p>
+		</div>
+
+</div><!-- /page -->			
+		
+	
+					
+    </body>
+</html>
